@@ -72,4 +72,4 @@ Access total transactions so far with sender,reciever details by navigating to *
 To use E-wal, open your browser and navigate to the URL where the application is hosted. You will be prompted to create an account or log in if you already have one. Once you are logged in, you can use the application to manage you wallet.
 
 ## Contributing
-We welcome contributions from the community. To contribute, please fork the repository, make your changes, and submit a pull request. Before submitting a pull request, please ensure that your changes are well tested and meet the project's coding standards.
+I welcome any contributions from the community. To contribute, please fork the repository, make your changes, and submit a pull request. Before submitting a pull request, please ensure that your changes are well tested and meet the project's coding standards.
