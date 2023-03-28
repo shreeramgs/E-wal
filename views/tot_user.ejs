@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <style>
+      #header, #main, #footer {
+        padding-left: 300px;
+      }
+      @media only screen and (max-width : 992px) {
+        #header, #main, #footer {
+          padding-left: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+
+    <!--Nav Bar-->
+    <div id="header" class="navbar-fixed">
+      <nav>
+        <div class="nav-wrapper grey darken-3">
+          <a href="/hp" class="brand-logo center">E-wal</a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="/hp">Home</a></li>
+          </ul>          
+        </div>
+      </nav>
+    </div>
+
+    <ul class="sidenav #ffffff white sidenav-fixed" id="mobile-demo">
+        <li b><a class="black-text" href="/hp">Home<i class="material-icons black-text">home</i></a></li>
+        <li b><a class="black-text" href="/admin_profile">Admin<i class="material-icons black-text">account_circle</i></a></li>
+        <li class="divider nogap"></li>
+        <li><a href="/admin_user" class="black-text">Total No of active users<i class="material-icons black-text">verified_user</i></a></li>
+        <li><a href="/admin_trans" class="black-text">Total user transactions<i class="material-icons black-text">playlist_add_check</i></a></li>
+        <li class="divider nogap"></li>
+        <li><a href="/out1" class="black-text">LOGOUT<i class="material-icons black-text">power_settings_new</i></a></li>
+    </ul>
+    <div class="fixed-action-btn">
+        <a class="btn-floating btn-large red">
+          <i class="material-icons">add</i>
+        </a>
+        <ul>
+          <li><a class="btn-floating red" href="/admin_profile"><i class="material-icons">account_circle</i></a></li>
+          <li><a class="btn-floating #8e24aa purple darken-1" href="/admin_user"><i class="material-icons">verified_user</i></a></li>
+          <li><a class="btn-floating green" href="/admin_trans"><i class="material-icons">playlist_add_check</i></a></li>
+          <li><a class="btn-floating blue" href="/out1"><i class="material-icons">power_settings_new</i></a></li>
+        </ul>
+      </div>
+  
+      <!--Section-->
+      <section id="main" style="padding-bottom: 300px">
+      <div class="row">
+          <div class="col s12">
+            <h5>ACTIVE USERS</h5>
+          </div>
+        </div>
+      <table>
+            <thead>
+              <tr>
+                  <th>UserID</th>
+                  <th>Name</th>
+                  <th>Mobile Number</th>
+                  <th>Email</th>
+              </tr>
+            </thead>
+    
+            <tbody>
+        <% for(var i=0;i < length2 ; i++) { %>
+              <tr>
+                <td><%= length1[i].userID %></td>
+                <td><%= length1[i].name %></td>
+                <td><%= length1[i].mobile %></td>
+                <td><%= length1[i].UserName %></td>
+              </tr>
+        <% } %>
+            </tbody>
+      </table>
+
+    </section>
+
+       
+    <!--Footer-->
+    <footer id="footer" class="page-footer grey darken-3">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">Footer Content</h5>
+            <p class="grey-text text-lighten-4">Welcome to the Total Users page on our E-wallet platform. As an administrator, you have access to view and manage all the users that have registered on our platform.
+              On this page, you can view a summary of all the registered users, including their name, email address, phone number, date of registration, and account status.
+            </p>
+          </div>
+          <div class="col l4 offset-l2 s12">
+            <h5 class="white-text">Links</h5>
+            <ul>
+              <li><a class="grey-text text-lighten-3" href="/hp">Home</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright grey darken-4">
+        <div class="container">
+          © 2018 Copyright Text
+          <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+        </div>
+      </div>
+    </footer>
+
+
+    <!--JavaScript at end of body for optsized loading-->
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.sidenav');
+        var instances = M.Sidenav.init(elems, {});
+        var elems = document.querySelectorAll('.fixed-action-btn');
+        var instances = M.FloatingActionButton.init(elems,{});
+        var elem = document.querySelector('.collapsible.expandable');
+        var instance = M.Collapsible.init(elem, {accordion: false});
+      });
+    </script>
+    
+  </body>
+</html>

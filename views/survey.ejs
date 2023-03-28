@@ -1,0 +1,249 @@
+f<!DOCTYPE html>
+<html>
+  <head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <style>
+      #header, #main, #footer {
+        padding-left: 300px;
+      }
+      @media only screen and (max-width : 992px) {
+        #header, #main, #footer {
+          padding-left: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+
+    <!--Nav Bar-->
+    <div id="header" class="navbar-fixed">
+      <nav>
+        <div class="nav-wrapper grey darken-3">
+          <a href="/das" class="brand-logo center">E-wal</a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="/das">Home</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <ul class="sidenav #ffffff white sidenav-fixed" id="mobile-demo">
+      <li b><a class="black-text" href="/das">Home<i class="material-icons black-text">home</i></a></li>
+      <li class="divider nogap"></li>
+      <li><a href="/profile" class="black-text">Profile<i class="material-icons black-text">account_circle</i></a></li>
+      <li><a href="/wallet" class="black-text">wallet<i class="material-icons black-text">account_balance_wallet</i></a></li>
+      <li><a href="/survey1" class="black-text">Survey<i class="material-icons black-text">account_balance</i></a></li>
+      <li><a href="/pay" class="black-text">PAY<i class="material-icons black-text">add_shopping_cart</i></a></li>
+      <li><a href="/out" class="black-text">LOGOUT<i class="material-icons black-text">power_settings_new</i></a></li>
+      <li><a href="#" class="black-text">FAQ/Help<i class="material-icons black-text">help_outline</i></a></li>
+      <li><a href="/remove" class="black-text">REMOVE ACCOUNT<i class="material-icons black-text">remove</i></a></li>
+    </ul>
+
+    <div class="fixed-action-btn">
+      <a class="btn-floating btn-large red">
+        <i class="large material-icons">add</i>
+      </a>
+      <ul>
+        <li><a class="btn-floating red" href="/profile"><i class="material-icons">account_circle</i></a></li>
+        <li><a class="btn-floating #8e24aa purple darken-1" href="/wallet"><i class="material-icons">account_balance_wallet</i></a></li>
+        <li><a class="btn-floating green" href="/bank"><i class="material-icons">account_balance</i></a></li>
+        <li><a class="btn-floating blue" href="/pay"><i class="material-icons">add_shopping_cart</i></a></li>
+        <li><a class="btn-floating blue" href="/#"><i class="material-icons">help_outline</i></a></li>
+      </ul>
+    </div>
+
+    <!--Section-->
+    <section id="main" style="background-image: url('img8.jpg'); height: 1200px;">
+        <div class="container">
+          <div class="row"></div>
+            <div class="col s6">
+             <div class="card white">
+              <div class="card-content"> 
+                <span class="cart-title center"><h2>SURVEY</h2></span>
+                <span class="cart-title center"><h4>GIVE SURVEY AND GET REWARDS</h4></span>
+                <form action="#" class="row">
+                <h5>1. HOW VISUALLY APPEALING IS OUR WEBSITE?</h5>
+                <p>
+                    <label>
+                      <input name="group1" type="radio" checked />
+                      <span>EXTREMELY APPEALING</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input name="group1" type="radio" />
+                      <span>VERY APPEALING</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input class="with-gap" name="group1" type="radio"  />
+                      <span>SOMEWHAT APPEALING</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input name="group1" type="radio"  />
+                      <span>NOT AT ALL APPEALING</span>
+                    </label>
+                  </p>
+                </form>
+                  <li class="divider nogap"></li>
+                  <form action="#" class="row">
+                  <h5>2. HOW MUCH DO YOU TRUST ON OUR WEBSITE?</h5>
+                  <p>
+                      <label>
+                        <input name="group1" type="radio" checked />
+                        <span>A LOT</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                        <input name="group1" type="radio" />
+                        <span>A MODERATE</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                        <input class="with-gap" name="group1" type="radio"  />
+                        <span>A LITTLE</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                        <input name="group1" type="radio"  />
+                        <span>NOT AT ALL</span>
+                      </label>
+                    </p>
+                  </form>
+                    <li class="divider nogap"></li>
+                    <form action="#" class="row">
+                    <h5>3. HOW LIKELY IS THAT YOU WOULD RECOMMEND OUR WEBSITE TO YOUR FRIEND OR COLLEGUE?<br />GIVE RATING FOM 5</h5>
+                    <p>
+                        <label>
+                          <input name="group1" type="radio" checked />
+                          <span>5</span>
+                        </label>
+                      </p>
+                      <p>
+                        <label>
+                          <input name="group1" type="radio" />
+                          <span>4</span>
+                        </label>
+                      </p>
+                      <p>
+                        <label>
+                          <input class="with-gap" name="group1" type="radio"  />
+                          <span>3</span>
+                        </label>
+                      </p>
+                      <p>
+                        <label>
+                          <input name="group1" type="radio"  />
+                          <span>2</span>
+                        </label>
+                      </p>
+                      <p>
+                          <label>
+                            <input name="group1" type="radio"  />
+                            <span>1</span>
+                          </label>
+                        </p>
+                      </form>
+                      <li class="divider nogap"></li>
+                      <form action="#" class="row">
+                      <h5>4. OVERALL,HOW DOES OUR WEBSITE MEET YOUR NEEDS?</h5>
+                    <p>
+                        <label>
+                          <input name="group1" type="radio" checked />
+                          <span>EXTREMELY WELL</span>
+                        </label>
+                      </p>
+                      <p>
+                        <label>
+                          <input name="group1" type="radio" />
+                          <span>SOMEWHAT WELL</span>
+                        </label>
+                      </p>
+                      <p>
+                        <label>
+                          <input class="with-gap" name="group1" type="radio"  />
+                          <span>NOT SO WELL</span>
+                        </label>
+                      </p>
+                      <p>
+                        <label>
+                          <input name="group1" type="radio"  />
+                          <span>NOT AT ALL WELL</span>
+                        </label>
+                      </p>
+                    </form>
+                      <li class="divider nogap"></li>
+                      <form action="#" class="row">
+                      <h5>5. DO YOU HAVE ANY OTHER COMEMNTS HOW WE CAN IMPROVE OUR WEBSITE?</h5>
+                    <p>
+                        <i class="material-icons prefix">comment</i>
+                        <input id="text" type="text" name="text" class="validate" required>
+                      <label for="text">COMMENTS</label>
+                    </p>
+                  </form>
+                  <form action='/surveysubmit' method="GET">
+                  <button class="btn waves-effect waves-light" type="submit" name="action">SUBMIT</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+        </div>
+      </section>
+
+
+    </section>    
+    <!--Footer-->
+    <footer id="footer" class="page-footer grey darken-3">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">Footer Content</h5>
+            <p class="grey-text text-lighten-4">Thank you for using E-wal.</p>
+          </div>
+          <div class="col l4 offset-l2 s12">
+            <h5 class="white-text">Links</h5>
+            <ul>
+              <li><a class="grey-text text-lighten-3" href="/das">Home</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright grey darken-4">
+        <div class="container">
+          © 2018 Copyright Text
+          <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+        </div>
+      </div>
+    </footer>
+
+
+    <!--JavaScript at end of body for optimized loading-->
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.sidenav');
+        var instances = M.Sidenav.init(elems, {});
+        
+        var elems = document.querySelectorAll('.fixed-action-btn');
+        var instances = M.FloatingActionButton.init(elems,{});
+      });
+    </script>
+    
+  </body>
+</html>
