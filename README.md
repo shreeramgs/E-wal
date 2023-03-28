@@ -50,7 +50,7 @@ Access the **payment page** to transfer funds:
 To **delete** your account you can navigate **remove account** page:
 ![Screenshot (180)](https://user-images.githubusercontent.com/40434495/228373270-f0a49965-e33a-45fe-a069-b535242c9bd7.png)
 
-##Admin Features:
+## Admin Features:
 
 The features can be accessed by both **side-nav** bar and **Floating buttons** on the lower right corner.
 
@@ -68,8 +68,8 @@ Access **Total number of active users**:
 Access total transactions so far with sender,reciever details by navigating to **Total user Transaction page**.
 ![Screenshot (184)](https://user-images.githubusercontent.com/40434495/228375072-39937a26-09e5-480c-9266-e4bf241aa73c.png)
 
-##Usage
+## Usage
 To use E-wal, open your browser and navigate to the URL where the application is hosted. You will be prompted to create an account or log in if you already have one. Once you are logged in, you can use the application to manage you wallet.
 
-##Contributing
+## Contributing
 We welcome contributions from the community. To contribute, please fork the repository, make your changes, and submit a pull request. Before submitting a pull request, please ensure that your changes are well tested and meet the project's coding standards.
